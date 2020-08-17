@@ -1,0 +1,72 @@
+File Handling : It is a process in which we can store and read information in files and folders.
+
+
+scandir("directory name")	// scan directory and store all names in array
+
+
+mkdir("directory name")		// make directory
+rmdir("directory name")		// remove directory
+is_dir("directory name")	// check directory exist or not
+
+
+touch("filename.ext")		// create filename
+unlink("filename.ext")		// remove filename
+file_exists("filename.ext")	// check file exist or not
+
+
+fopen("filename.ext","mode");
+mode : w,r,a;
+
+
+
+Write
+
+$fo = fopen("abc.txt","w");
+
+fwrite($fo,"Data");	// write data in file
+fputs($fo,"Data");	// write data in file
+	
+	
+	
+Read
+
+$fo = fopen("abc.txt","r");	
+
+fread($fo,3);		// read file until given number of characters	
+filesize("filename.txt")	// count number of characters in file
+fread($fo,filesize("abc.txt"))		// read whole file
+fgets($fo)		// read line by line
+fgetc($fo)		// read char by char
+
+
+
+while(!feof($fo))
+{
+	echo fgetc($fo);
+	echo "<br>";
+}
+
+	
+	
+	
+	
+	
+	
+
+file_put_contents("xyz.txt","Delhi\nNoida");	// create file if not exist, open file in w model and write data
+
+
+
+
+file_get_contents("xyz.txt");	// open file in r mode and read whole file
+
+
+
+fclose($fo)		// close file
+
+
+
+
+
+
+	

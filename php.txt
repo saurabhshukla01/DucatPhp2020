@@ -1,0 +1,731 @@
+			PHP Course 2020 Ducat Noida
+
+PHP : PHP is stand for hypertext pre processor. It is open source server side scripting language which used for developed dynamic websites. It was developed by Rasmus Lerdrof around 1994.
+
+Extension : .php
+
+Advantage
+*	open source(source code can change)
+*	multiplatform(win,linux,mac)
+*	support many databases (e.g mysql, oracle etc)
+* 	support many web servers (e.g. apache, iis etc)
+* 	easy to use, light weight, fast processing
+* 	support opps features
+
+
+
+php
+xampp (Cross)
+wamp  (windows)
+lamp  (linux)
+mamp  (mac)
+
+
+
+xampp download from apachefriends.org
+install
+
+xampp control panel	( start apache and mysql )
+
+
+
+save file
+	c://xampp/htdocs/folder/filename.php	
+e.g.
+	c://xampp/htdocs/06pm/first.php
+
+	
+	
+code
+-----
+-----
+-----
+
+
+Run	(browser)
+http://localhost/06pm/first.php
+or
+localhost/06pm/first.php
+
+
+-----------------------------------------------------
+
+
+Tags(Delimeters)
+
+1 standard tag
+	<?php
+	
+	?>
+	
+2 short tag
+	<?
+	
+	?>
+
+3 Asp tag
+	<%
+	
+	%>
+
+
+
+
+
+
+
+for output on screen
+
+	echo	
+		* fast processing
+		* it can execute multiple statement
+			e.g.
+				echo "","","";
+				echo  "Hello","Ducat";
+	
+	print
+		* slow processing
+		* it can execute only single statement
+			e.g.
+				print "";
+				print  "Hello";
+	
+	
+	
+concatination ( . )
+
+	echo	"Hello"."Ducat";
+	print   "Hello"."Ducat";
+	
+
+	
+	
+
+new line
+	<br> (webpage)
+	\n	 (file)
+
+	
+
+echo "Hello <br> PHP";
+print "Hello <br> PHP";
+echo "<h1>India</h1>";
+
+
+
+
+
+comments
+
+	//		single line comments
+	#		single line comments
+	
+	
+	/*
+			
+			multiple line comments
+	
+	*/
+
+
+
+
+	
+variable : it is a temporary memory location which used for hold the information. the value of variable can vry(change) at run time.
+
+Rules for declare variable
+* start from $ sign
+* continue with a-zA-Z_
+* can combination a-zA-Z0-9
+
+e.g.
+	$a;
+	$D;
+	$5;		wrong
+	$_A;
+	$a5;
+	$5a;	wrong
+	
+	
+$a = 5;
+echo $a;
+
+
+$b = "India";	
+echo $b;
+
+
+
+
+
+
+
+Data Types : in php data types allocate automatically at run time according to variable value.
+
+	int, string, double, array, object , resource, boolean, null
+
+
+check data type
+	gettype(var name)		show only data type
+	var_dump(var name)		print, show data type and value
+
+e.g.	
+
+	$a = 5;
+	echo gettype($a);
+	var_dump($a);
+	
+	
+	
+
+
+
+
+
+e.g 
+	$x = 5;
+	echo "value of x is ".$x;
+
+	
+e.g.
+	$a = 5;
+	$b = 3;
+	echo "value of a is ".$a." and value of b is ".$b;
+
+	
+	
+e.g.
+
+	$z = 8;
+
+	echo "value of z = ".$z;		(value of z is 8)
+	echo "value of z = $z";			(value of z is 8)
+	echo 'value of z = $z';			(value of z is $z)
+	
+
+
+	
+Constant : it is a temporary memory location which used for hold the information. the value of constant can not vry(change) at run time.
+	
+	defined("constant name","value");
+	const constantname = value;
+	
+	Rules for define constant name
+		* always start from a-zA-Z_
+		* can use a-zA-Z0-9
+		
+	e.g
+		define("HOST","Localhost");
+		or
+		const HOST = "Localhost";
+		
+		echo HOST;
+		
+	e.g.
+		define("A","India");		
+		or 
+		const A = "India";
+		
+		echo A;
+	
+		
+		
+		
+
+		
+Operators : It is a special symbols which meanings are predefine. They work accoring to ther predefine meaning.
+
+Type of Operators
+
+1 Arithmetic Operator
+	+	Addition
+	-	Substraction
+	*	Multiplication
+	/	Division
+	%	Modulus
+	
+	e.g.
+	$a = 10;
+	$b = 3;
+	
+	$c = $a+$b;		// output 13
+	echo $c;
+	
+	$c = $a/$b;		// output 3
+	
+	$c = $a%$b;		// output 1
+	
+	
+	
+2 Assignment Operator
+		It used for shift the value from right side to left side
+		
+		
+	=
+	+=
+	-=
+	*=
+	/=
+	%=
+	
+	e.g.
+	
+	$a = 5;
+	$b = 2;
+	
+	$a = $a+$b
+		or
+	$a += $b;
+	
+	
+	$a = $a-$b;
+	$a -= $b;
+	
+	
+	
+3 Comparision Operator
+
+		
+	==		match only value
+	===		match value and data type
+	!=		match only value
+	!==		match value and data type
+	
+	
+	$a = 5;
+	$b = "5";
+	
+	$a == $b;
+	$a === $b;
+	
+		
+	
+	
+4	Increment Operator
+
+		++	Increment By 1
+		--	Decrement By 1
+		
+		
+	$a = 5;
+	$a++;
+	echo $a;	// Output 6
+	
+	
+	$a = 5;
+	++$a;
+	echo $a;	// Output 6
+
+		
+	$a = 5;
+	echo $a++;	// Output 5
+	echo $a;	// Output 6	
+	
+	
+	
+	$a = 5;
+	echo ++$a;	// Output 6
+	echo $a;	// Output 6	
+	
+	
+		
+	$a = 5;
+	$a++;
+	echo $a;	// Output 6
+	echo --$a;	// Output 5
+	echo $a;	// Output 5
+	
+	
+	
+5 Relational Operator
+	
+		>	Greater than
+		>=	Greater than equal too
+		<	Less than
+		<=	Less than equal too
+
+		
+	e.g.
+		$a = 5;
+		$b = 5;
+		
+		$a >= $b;
+		
+
+6 Logical Operator
+	
+	&&	AND
+	||	OR
+	!	NOT	
+
+
+	($a>$b && $a>$c)  Both Condition True
+	
+	($a>$b || $a>$c)  At Least One Condition True
+	
+		
+		
+7 Conditional Operator
+  Ternary Operator
+  Question Colon Operator
+  
+  syntax
+	(condition ? "True Statement" : "False Statement")
+	
+  e.g.
+	$a = 5;
+	$b = 3;
+	
+	echo ($a>$b ? "A is Greater" : "B is Greater");
+		
+		
+		
+
+		
+
+		
+Conditional Statement
+1 if
+2 if else
+3 if else if
+4 switch case
+
+
+
+
+
+Q wap to store a 3 digit number in a variable, check that number is palindrome or not ?
+	$no = 134;
+	
+	
+
+Q wap to store 3 digit number in a variable, check that is it armstrong or not ? 
+	$no = 153
+	
+	
+	
+
+	
+	
+	
+Loop : 	Loop is used for execute same statement multiple times.
+		
+Types 
+	
+1 for	
+
+	syntax
+	
+	for(initialize; condtion; inc/dec)	
+	{
+		code
+	}
+	
+	
+	
+	e.g
+	
+	for($i=1; $i<=5; $i++)
+	{
+		echo "Hello";
+	}
+	
+	
+	e.g
+	
+	for($i=5; $i>=1; $i--)
+	{
+		echo "Hello";
+	}
+	
+	
+	
+	
+	
+2 while
+
+		syntax
+		
+		initialization;
+		
+		while(condition)
+		{
+			code
+			inc/dec
+		}
+	
+	
+	e.g.
+		
+		$i=1;
+		
+		while($i<=5)
+		{
+			echo "Hello";
+			$i++;
+		}
+	
+	
+	
+	
+	
+3 do while
+
+	syntax
+	
+		intitialization
+		
+		do
+		{
+			code
+			
+			inc/dec
+		}while(condition)
+		
+		
+		
+		e.g.
+		
+		
+		
+		
+Q Wap to print factorial of a given number.		
+	$no = 5;
+	
+	
+Q. wap to print fibonacci series upto 10 numbers.
+	0 1 1 2 3 5 8 ........
+	
+	
+Q. wap to check that given number is palindrome or not.
+	$no = 121;
+
+	
+Q. wap to check that given number is armstrong or not ?
+	$no = 153;
+		
+		
+
+		
+Jump Statement
+1 break
+2 continue
+3 exit
+
+
+		
+
+*****
+****
+***
+**
+*
+
+
+
+*****
+ ****
+  ***
+   **
+    *   
+		
+		
+		
+		
+1
+12
+123
+1234
+12345
+
+
+    1
+   22
+  333		
+ 4444
+55555 
+		
+		
+		
+abcd
+abcd
+abcd		
+		
+	
+	
+	
+01 03 05 07
+09 11 13 15
+17 19 21 23
+25 27 29 31
+
+
+02 04 06 08
+10 12 14 16
+18 20 22 24
+26 28 30 32
+	
+	
+	
+	
+Q write a program to print prime number upto 100;			
+	
+Q write a program to print table till given number.	
+	$no = 4;
+	1........
+	2........
+	3........
+	4........
+	
+	
+
+    *
+   * *
+  * * *
+ * * * *
+* * * * *
+		
+		
+    *
+   ***
+  *****
+ *******
+********* 
+		
+		
+*********
+ *******
+  *****
+   ***
+    *
+	
+	
+	
+*
+*
+*
+*
+* * * * *
+
+
+*****
+  *
+  *
+  *
+  *
+
+
+*  *
+*  *
+****
+*  *
+*  *
+  
+	
+	
+*   *	
+ * *	
+  *	
+ * *	
+*   *	
+	
+	
+	
+****	
+	*
+****	
+	*
+****
+	
+	
+	
+	
+	
+	
+(i,j)
+(1,1)	(1,2)	(1,3)	(1,4)	(1,5)
+*	*	*	*	*
+
+(2,1)	(2,2)	(2,3)	(2,4)	(2,5)
+*	*	*	*	*
+
+(3,1)	(3,2)	(3,3)	(3,4)	(3,5)
+*	*	*	*	*
+
+(4,1)	(4,2)	(4,3)	(4,4)	(4,5)
+*	*	*	*	*
+
+(5,1)	(5,2)	(5,3)	(5,4)	(5,5)
+*	*	*	*	*
+
+
+=========================================================================================================
+	
+	
+	
+01 03 05 07 
+03 05 07 09 
+05 07 09 11 
+07 09 11 13
+ 
+ 
+
+ 
+    1   
+   2 2   
+  3 4 3  
+ 4 5 6 4 
+5 7 8 9 5  
+
+   
+    1   
+   2 2   
+  3 4 3  
+ 4 5 6 4 
+5 6 7 8 5           
+
+
+n=3  
+
+{*}   
+   {{*}}        
+	{{{*}}}    
+
+n=4 
+
+{*}   
+   {{*}}        
+	{{{*}}}         
+		{{{{*}}}}
+
+
+            
+n=3 
+
+1 
+22 
+22 
+333 
+333 
+333      
+
+n=4      
+
+1 
+22 
+22 
+333 
+333 
+333 
+4444 
+4444 
+4444 
+4444
+
+
+
+===================================================================================================    
+		
+		
+		
+		

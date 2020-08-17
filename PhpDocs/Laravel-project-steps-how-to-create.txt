@@ -1,0 +1,76 @@
+	How Can Create New Project In Laravel 6.0 (Full project Step by step) User Use all steps and commands : 
+
+#######################################
+
+Uses Link : (important url how can create project in laravel)
+https://auth0.com/blog/build-a-laravel-6-app-with-authentication/
+https://appdividend.com/2019/09/12/laravel-6-crud-example-laravel-6-tutorial-for-beginners/
+https://laravel.com/docs/7.x/installation
+
+#######################################
+
+All Projects Command here (use in project)
+
+Composer Install command :
+
+# composer global require laravel/installer
+Project  Create Command in laravel 6.0 in version of php 7.2 or less than  :
+#   composer create-project laravel/laravel project-name
+				Or
+#  composer create-project --prefer-dist laravel/laravel Project-name
+				Or 
+cmd#    Laravel new Project-name  (If not working this command so use this command in your project only working with 7.3 or more vision in php ).
+
+Go to project directory : 
+# cd project-name
+After start server command :
+#  php artisan serve
+After start server You can open her project in localhost with port :
+Project Url :  http://127.0.0.1:8000
+
+***********************************************************************************
+
+How To add All Project Based Steps : 
+
+   		 	Laravel Project Step How to create Project In Laravel 6.0
+
+
+Uses Link :
+
+https://auth0.com/blog/build-a-laravel-6-app-with-authentication/
+   			 
+   			 
+1) Step 1 : how to install Composer before creating the Laravel project.
+cmd command is user enter xampp htdocs dir :
+
+cmd#   composer global require laravel/installer
+
+2) Step 2 : Create New project (project name) Like : project1
+
+cmd#    Laravel new Project-name  (If not working this command so use this command in your project only working with 7.3 or more vision in php ).
+
+cmd#   composer create-project --prefer-dist laravel/laravel pharmaLaravel
+   	 or
+
+cmd#   composer create-project laravel/laravel project-name
+   	 or
+
+cmd#   composer create-project laravel/laravel="6.*" pharma-laravel
+
+3)   cd pharma-laravel;  or cd Project-name  or  cd pharmaLaravel
+
+cmd#   php artisan serve   (server start in cmd command after start this you can open her project).
+
+show project dir.
+
+################################################################
+
+Project Url :  http://127.0.0.1:8000
+
+**********************************************************************************
+
+
+	
+
+
+

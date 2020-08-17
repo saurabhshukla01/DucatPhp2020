@@ -1,0 +1,46 @@
+<html>	
+	<head>
+		<title>javascript</title>
+		
+		<script>
+			
+			function abc()
+			{
+				x = document.getElementsByTagName('p');
+				
+				data = x[1].innerHTML;
+				
+				document.getElementById("target").innerHTML = data;
+			}
+			
+			
+			
+			function xyz()
+			{
+				x = document.getElementsByClassName('d1');
+				
+				data = x[1].innerHTML;
+				
+				document.getElementById("target").innerHTML = data;
+			}
+			
+		</script>
+	</head>
+	
+	<body>
+		
+			<p>Hyper Text Markup Language</p>
+			<p class="d1">Cascading Style Sheet</p>
+			<h2>India</h2>
+			<h2 class="d1">USA</h2>
+			<h3>Delhi</h3>
+			<h3 class="d1">Washington</h3>
+			<p>Javascript</p>
+		
+			<input type="button" value="TagName" onclick="abc()">
+			<input type="button" value="ClassName" onclick="xyz()">
+		
+			<h1 id="target"></h1>
+		
+	</body>
+</html>

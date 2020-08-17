@@ -1,0 +1,166 @@
+<html>
+	<head>
+		<title>jQuery</title>
+		
+		<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=wu3J24Kh2SmRuAfD7RrcMw1SRih4dg2CaaW4xyruzEvHUUI_pf-3IWKiqVr0LLkJUnIo1-gcAf3LLyUP2_FaTlRDNH9RS8I8YOZAkQChpqUl9DB4p7682AGe_12fVlP61Dh8M8cgBgg8MqbglDt0GJyduRXg5YIWeGc87L6bGQ0Vl06APj_-NiJNtJRUcynf-5N_R-lJXosLeAP3WzckEsW2hHZkAmkSTs6yHE4pkCkQm3rSSpaKwWo7ouSJm5-Yf5y3WAcnPSXbKe-AgweGzWheAhEGYiuMR7O-yuhlxJDOp8QlFUCHLdfT9LFr7id4AiutfjSMEfI61qWmbgL-gQuSONNKsTcBJ7-SY3fqFEgmuHKPg2mxN7LYNrLV2mp8uBNPDK73nQJ8NTdXMsAZIO69RGy-Dt_G2xFoVyoP--wjrt5LKnP0bROskBEOhNPGSNr-N9a9O16L2wRdhx4bog" charset="UTF-8"></script><script src="jquery-3.5.1.min.js"></script>
+		
+		<script>
+			$(document).ready(function()
+			{
+				$('#tar').hide();
+				
+				// Hide Show
+				$('#sub').click(function()
+				{
+					$('#tar').toggle(2000);
+				})
+				
+				
+								
+				//get Form Values		
+				$('#sub2').click(function()
+				{
+					user = $('#un').val();
+					alert(user);
+				})
+				
+				
+					
+					
+				//set Form Values
+				$('#sub3').click(function()
+				{
+					num1 = $('#n1').val();
+					$('#n2').val(num1);
+					$('#n1').val("");
+				})
+				
+				
+				
+				//get value from tag without formatting Tags
+				
+				$('.sub4').click(function()
+				{
+					t = $('#d1').text();
+					alert(t);					
+				})
+				
+				
+				
+				//get value from tag with formatting Tags
+				
+				$('.sub5').click(function()
+				{
+					t = $('#d2').html();
+					alert(t);					
+				})
+				
+				
+				
+				//set value in tag without formatting Tags
+				$('#sub6').click(function()
+				{
+					$('#d3').text("Hello <b>India</b>");
+				})
+				
+				
+				//set value in tag with formatting Tags
+				$('#sub7').click(function()
+				{
+					$('#d4').html("Hello <b>India</b>");
+				})
+				
+					
+				//append value in tag with formatting Tags
+				$('#sub8').click(function()
+				{
+					$('#d5').append(" Punjab");
+				})
+				
+				
+				//get value from attribute
+				$('#clk').click(function()
+				{
+					//c = $('#clk').attr("category");
+					c = $(this).attr("category");
+					alert(c);
+				})
+				
+				
+				//Use of this keyword
+				$('p').click(function()
+				{
+					//$('p').hide();
+					$(this).hide();
+				})
+			})
+		</script>
+	</head>
+	
+	<body>
+		
+		<!-- Hide/Show -->
+		<h2 id="tar">India</h2>
+		<input type="submit" id="sub" value="Show/Hide">
+		
+		<hr>
+		
+		<!-- get Form Values -->
+		<input type="text" id="un">
+		<input type="submit" id="sub2">
+		
+		<hr>
+		
+		<!-- set Form Values -->
+		<input type="text" id="n1">
+		<input type="text" id="n2">
+		<input type="submit" id="sub3">
+		
+		<hr>
+		
+		<!-- get value from tag without formatting Tags-->
+		<div id="d1">Hyper Text <b>Markup</b> Language</div>
+		<input type="submit" class="sub4">
+		
+		<hr>
+		
+		<!-- get value from tag with formatting Tags-->
+		<div id="d2">Hyper Text <b>Markup</b> Language</div>
+		<input type="submit" class="sub5">
+		
+		
+		<hr>
+		
+		<!-- set value in tag without formatting Tags-->
+		<div id="d3"></div>
+		<input type="submit" id="sub6">
+		
+		
+		<hr>
+		
+		<!-- set value in tag with formatting Tags-->
+		<div id="d4"></div>
+		<input type="submit" id="sub7">
+		
+		<hr>
+		
+		<!-- append value in tag with formatting Tags-->
+		<div id="d5">Delhi</div>
+		<input type="submit" id="sub8">
+		
+		<hr>
+		
+		<!-- get value from attribute -->
+		<a id="clk" href="javascript:void()" category="Mobiles">Click</a>
+		
+		
+		<hr>
+		<!-- Use of this keyword -->
+		<p>Delhi</p>
+		<p>Noida</p>
+		<p>Punjab</p>
+		<p>Rajasthan</p>
+		
+		
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+<script type="text/javascript">
+function bgChange(bg)
+{
+document.getElementById('x').style.background="url(" + bg + ")";
+}
+</script>
+</head>
+
+<body>
+
+<p>This example demonstrates how to insert a background image to an input field</p>
+<p>Mouse over these images and the input field will get a background image.</p>
+
+<table width="300" height="100">
+<tr>
+<td onmouseover="bgChange('paper.jpg')" 
+background="paper.jpg">
+</td>
+<td onmouseover="bgChange('bgdesert.jpg')" 
+background="bgdesert.jpg">
+</td>
+</tr>
+</table>
+
+<form>
+<input id="x" type="text" value="Mouse over the images" size="20">
+</form>
+
+</body>
+</html>
+

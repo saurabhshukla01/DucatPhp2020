@@ -1,0 +1,97 @@
+State Management : It used for move information from one location to another location.
+
+1	Session			(Server Side)
+2	Query String	(Client Side)
+3	Hidden Fields	(Client Side)
+4	Cookies			(Client Side)
+
+
+
+1	Session : It work Server Side so It is more Secure, It used for track the information untill we found session environment, by default session time out is 24 minutes.
+
+
+* start	
+	session_start();
+	
+	
+* create
+	$_SESSION['session name'];
+	e.g.
+	$_SESSION['user'] = 'abc@gmail.com';
+
+* Read
+	$_SESSION['session name'];
+	e.g.
+	echo $_SESSION['user'];
+	
+* Destroy
+	session_destroy();		// destroy all session
+	
+	unset($_SESSION['session name'])	// destroy particular session
+	e.g.
+		unset($_SESSION['user']);
+	
+	
+	
+	
+	
+	
+2 Query String : It used for move information from one page to another page by url
+
+
+	Send						
+			<a href="abc.php?obj=123&&obj2=321">Click</a>			
+					or 					
+			header("location:abc.php?obj=123&&obj2=321");
+			
+			
+	Receive
+			$_GET[];
+			$_REQUEST[];
+			
+			
+			echo $_GET['obj'];
+			echo $_GET['obj2'];
+	
+	
+
+
+3 Hidden Field : It is a form input field which used for store the information. It does not display on web page but we can access the information of hidden field
+
+
+	<input type="hidden" name="" value="">
+	
+	
+	
+	
+4 Cookies : cookies are the text files which store on browser. it used for store small information. The maximum size of theses files 4kb.
+20 cookies can create on system by single website.
+300 cookies can store on browser
+
+
+Type of Cookies 
+		Persistance	(Permanent)
+		Non Persistance (Temporary)
+
+
+*	create cookie
+		
+		setcookie("cookie name","value")			Non Persistance
+		setcookie("cookie name","value","time")		Persistance
+		
+		e.g.
+		setcookie("useremail","abc@gmail.com")		Non Persistance
+		setcookie("useremail","abc@gmail.com",time()+60*60) 	Persistance
+		
+		
+* 	Read 
+
+		$_COOKIE['cookie name'];
+		
+		e.g.
+		echo $_ COOKIE['useremail'];
+		
+
+*	Destroy
+		
+		setcookie("useremail","",time()-60*60)

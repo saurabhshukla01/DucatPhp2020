@@ -1,0 +1,204 @@
+JavaScript : javascript is a very powerful client side scripting language. It used for animation, validation, event handling etc. It is mainly used for enhancing the interaction of user with web page. We can make more interactive webpage with he help of javascript.
+
+case sensitive
+
+
+Type of JavaScript
+
+Internal
+	<script>
+		Code Here
+	</script>
+	
+	
+External : File Create (filename.js) and write code in this filename
+			attach : <script src="filename.js"></script>
+	
+	
+	
+Output : 
+	document.write("Hello")		web page
+	alert("Hello");				alert box
+	console.log("Hello")		console panel
+	
+	
+	
+Comments
+	// single line comments
+	
+	
+	/*
+		multiple line comments
+	*/
+
+	
+	
+New Line
+
+	<br>	webpage
+	\n		alert
+	
+	
+concatinate		+
+	
+	
+Variables
+	var variable name = value;
+		varibale name = value;
+		
+	Rules for declare varibale name
+			* start from a-zA-Z_$
+			* can combination a-zA-Z0-9
+			
+			
+	e.g.
+		var a = 5;
+			a = 5;
+			
+			document.write(a);
+			
+			
+			
+Data Types : allocate automatically at run time
+			number,string,array,object,boolean,null	(by default undefined)
+			
+
+Check Data Type
+		typeof()
+		
+		e.g
+		a = 56;
+		document.write(typeof(a));
+		
+		
+
+Operator
+
+Conditional Statements
+	if
+	if else
+	else if
+	switch
+	
+	same as php
+	
+	
+Loops
+	for
+	while
+	do while
+	
+	same as php
+	
+		
+		
+
+
+Array
+	array name = Array(value,value,value);
+		or
+	array name = [value,value,value];
+	
+	
+	e.g.
+	
+	arr = Array(22,"blue",88.7);
+	
+	arr = [22,"blue",88.7];
+	
+	
+	
+count array elements
+	document.write(arrname.length);
+	e.g.
+	document.write(arr.length);
+	
+	
+	
+	
+User Input (Popup Box)
+	Prompt("title","placeholder")
+	confirm("message");
+	
+	
+
+	
+Function : It is set of reusable code
+
+Type of Function 
+
+1	Predefine function
+	library function
+	inbuild function
+			
+2	user define function
+		  
+		  
+	function abc()
+	{
+		alert('Hello');
+	}	
+	
+	function xyz()
+	{
+		alert('Welcome');
+	}
+		  
+		
+	
+	abc();
+	xyz();
+	abc();
+	
+
+
+
+
+Events
+
+onmouseover
+onmouseout
+onclick
+ondblclick
+onkeyup
+onkeydown
+onblur
+onfoucs
+onload
+
+
+
+
+
+setInterval()	// run continuosly
+setTimeout()	// run one time
+clearInterval()	// stop
+
+
+
+
+
+Dom (Document Object Model)
+
+Element		Attribute		Style
+
+
+document.getElementById()._____________
+document.getElementsByName().__________
+document.getElementsByTagName().________
+document.getElementsByclassName().________
+document.querySelector().__________
+document.querySelectorAll().__________
+	
+	
+	
+	
+BOM (Browser Object Model)
+
+	
+	
+	
+	
+	
+	
+	

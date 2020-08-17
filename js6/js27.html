@@ -1,0 +1,44 @@
+<html>	
+	<head>
+		<title>javascript</title>
+		
+		<script>
+			
+				s = setInterval(blink,100);
+			
+				function blink()
+				{
+					if(document.getElementById("target").style.color == "red")
+					{
+						document.getElementById("target").style.color = "blue";
+					}
+					else
+					{
+						document.getElementById("target").style.color = "red";
+					}
+				}
+				
+				
+				function blinkstop()
+				{
+					clearInterval(s);
+				}
+				
+				function blinkstart()
+				{
+					s = setInterval(blink,100);
+				}
+			
+		</script>
+	</head>
+	
+	<body onload="blink()">
+		
+		<h2 id="target">Blinking Header</h2>
+
+		<input type="button" value="Stop" onclick="blinkstop()">
+		<input type="button" value="Start" onclick="blinkstart()">
+
+		
+	</body>
+</html>

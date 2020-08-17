@@ -1,0 +1,621 @@
+										JS POINT READING TUTORIAL ==>
+
+========================================================
+				Main Js Docs
+
+
+JavaScript : javascript is a very powerful client side scripting language. It used for animation, validation, event handling etc. It is mainly used for enhancing the interaction of user with web page. We can make more interactive webpage with he help of javascript.
+
+case sensitive
+
+
+Type of JavaScript
+
+Internal
+	<script>
+		Code Here
+	</script>
+	
+	
+External : File Create (filename.js) and write code in this filename
+			attach : <script src="filename.js"></script>
+	
+	
+	
+Output : 
+	document.write("Hello")		web page
+	alert("Hello");				alert box
+	console.log("Hello")		console panel
+	
+	
+	
+Comments
+	// single line comments
+	
+	
+	/*
+		multiple line comments
+	*/
+
+	
+	
+New Line
+
+	<br>	webpage
+	\n		alert
+	
+	
+concatinate		+
+	
+	
+Variables
+	var variable name = value;
+		varibale name = value;
+		
+	Rules for declare varibale name
+			* start from a-zA-Z_$
+			* can combination a-zA-Z0-9
+			
+			
+	e.g.
+		var a = 5;
+			a = 5;
+			
+			document.write(a);
+			
+			
+			
+Data Types : allocate automatically at run time
+			number,string,array,object,boolean,null	(by default undefined)
+			
+
+Check Data Type
+		typeof()
+		
+		e.g
+		a = 56;
+		document.write(typeof(a));
+		
+		
+
+Operator
+
+Conditional Statements
+	if
+	if else
+	else if
+	switch
+	
+	same as php
+	
+	
+Loops
+	for
+	while
+	do while
+	
+	same as php
+	
+		
+		
+
+
+Array
+	array name = Array(value,value,value);
+		or
+	array name = [value,value,value];
+	
+	
+	e.g.
+	
+	arr = Array(22,"blue",88.7);
+	
+	arr = [22,"blue",88.7];
+	
+	
+	
+count array elements
+	document.write(arrname.length);
+	e.g.
+	document.write(arr.length);
+	
+	
+	
+	
+User Input (Popup Box)
+	Prompt("title","placeholder")
+	confirm("message");
+	
+	
+
+	
+Function : It is set of reusable code
+
+Type of Function 
+
+1	Predefine function
+	library function
+	inbuild function
+			
+2	user define function
+		  
+		  
+	function abc()
+	{
+		alert('Hello');
+	}	
+	
+	function xyz()
+	{
+		alert('Welcome');
+	}
+		  
+		
+	
+	abc();
+	xyz();
+	abc();
+	
+
+
+
+
+Events
+
+onmouseover
+onmouseout
+onclick
+ondblclick
+onkeyup
+onkeydown
+onblur
+onfoucs
+onload
+
+
+
+
+
+setInterval()	// run continuosly
+setTimeout()	// run one time
+clearInterval()	// stop
+
+
+
+
+
+Dom (Document Object Model)
+
+Element		Attribute		Style
+
+
+document.getElementById()._____________
+document.getElementsByName().__________
+document.getElementsByTagName().________
+document.getElementsByclassName().________
+document.querySelector().__________
+document.querySelectorAll().__________
+	
+	
+	
+
+========================================================
+
+
+How to write value : 
+
+document.write("hello");   // print hello in the browser page 
+alert("hello");            // print hello in alert box open page 
+console.log('hello');      // display hello in console
+
+// how to open console : 
+open browser + right click on mouse + goto to inspect + after goto console link open ( and show and statement excute using console.log(); )
+
+console.log();      // print and statement using console command 
+console.error("this is error");   //  print you create error then use it ( devloper most uses this when created code)
+console.table();   // show value on console table formate
+console.clear()     // clear your console using this one
+
+====================================================================================================
+1) conditions :
+if
+else
+else if
+
+2) Ternany opreator   ( like work if else condition statement single line condition .) 
+
+3) switch case / default case :
+
+4) variables : 
+
+var
+Let
+Count
+
+5) Continue And Break Statement
+
+6) Mathmetical oparator
+
+* , + , - , % , / , = 
+
+7) Logical oparator
+
+&& (and both condition true then work)
+|| (only one condition true then work)
+! (if condition true then return false , else condition false then return true)
+
+8) Conditional oparator
+
+=== (using to value and data type check then use it)
+== (using to value check then use it)
+!= (using to value is not then check it)
+
+
+9) alert (open popup using js)
+
+10) confirm (using true or false condition using this one ==>   ok == true ; and cancel == false)
+uisng only condition based confirm 
+
+11) prompt box (using the user input then use it .)
+
+12) function          // create function and call many time (its use only code reusevisiblity is low then use)
+
+13) function with parameter    // function with parameter (use some change inside code)
+
+14) function override          // function override varriable is inside function parameter
+
+15) function overload          // function value pass 2 var , and calculate with three then use it.
+
+16) function with return value     // function return value after print then store is first any var then print.
+
+17) Global and Local variable in function. 
+
+Global varriable ( access any where inside function or outside function)
+Local varriable (access only inside function)
+// Both is define the (fisrt come to local varriable after come to global) .
+
+18)  Javascript Events : 
+
+Events :  
+
+click (onclick)  // when button click then call any function user create onclcik button.
+Double click (ondblclick)   // when user click button double time then call function
+Right click (oncontextmenu)   // when right on text menu
+On change (onchange)          // only work with dropdown value changes.
+
+Mouse Hover (onmouseenter)    // on mouse 
+Mouse Out   (onmouseout)      // out mouse
+Mouse Down  (onmousedown)     // down mouse
+Mouse Up    (onmouseup)       // up mouse
+
+Key Press   (onkeypress)      // when key press then js call function ;
+
+keypress only ( working with body and form only not working with any html attributes.)
+
+Key Up       (onkeyup)        // onkeyup (after keypress then left key then working this open function . 
+
+Load        (onload)          // when window load then working function  
+Unload      (onunload)        // when window close then working function  
+Resize      (onresize)        // when resize window (zoom in Zoom out then working ) / function  
+Scroll      (onscroll)        // when page scroll the window open js file data and excute.
+
+
+Loop in Javascript : 
+
+Javascript loops : 
+
+1) While Loop
+2) do / While Loop
+3) for Loop
+4) for/in Loop   ( with use objects )
+5) forEach Loop  (with use Array)
+
+While Loop  : 
+
+synatx :
+
+Ex : 
+
+var i = 0;
+while (i<=10)
+{
+	document.write(i);
+	i = i +1;
+}
+
+
+Do While Loop  :
+
+synatx : 
+
+Ex : 
+
+var i = 1;
+do{
+	document.write(i);
+	//i = i+ 1;
+	i++;
+}while(i<=10)
+
+
+For Loop : 
+
+for(var a = 1; a <=10 ; a++)
+{
+	document.write(a);
+}
+
+
+----------------------------------------------------
+
+Continue and Break statement : 
+
+Continue Statement : 
+
+for(var a = 1; a <=10 ; a++)
+{
+
+	if(a == 3){
+		continue;       // skip a = 3 another print all no (o/t = >   1,2,4,5,6,7,8,9,10)
+	}
+
+	document.write(a);
+}
+
+Break Statement :
+
+
+for(var a = 1; a <=10 ; a++)
+{
+
+	if(a == 3){
+		break;       // break  a = 3 another print before 3 no after all skip no (o/t = >   1,2)
+	}
+
+	document.write(a);
+}
+
+
+--------------------------------------------
+Nested Loop : (loop inside loop is called nested loop)
+Even and odd no using Js
+
+=================================================
+
+DataType of Javascript :
+
+String  (combination of charcters is called Strings)
+Number  (Float and Integer both are called Number in JS)
+Boolean (Its return Only True or False 1 or 0)
+Array   (Combination of all datatype in arary)
+Object  (Any things is object its using in Advance Js)
+Null    (No one value is here is called Null)
+Undefined (create varriable but not define any value is there is called Undefined datatype).
+
+==================================================
+
+
+Array In Javascript : 
+
+Array : Array in Javascript the combination of all datatype is called list (array) .
+						
+					0	1	2	<---    index
+ 	Ex :  var arr = [10,20,30];
+
+ 						|
+ 						values of array 
+
+
+Ex :  var arr = [10,20,30];
+	  document.write(arr);
+	  document.write(arr[2]);
+	  o/t =>   10,20,30
+	  o/t => 30
+
+	  // note : if user input index is not array lenght and fill more than then ( value return is Undefined)
+
+Ex :  var arr = new array(10,20,30);
+
+
+Multidemsional array :
+
+json vlaue called also : 
+
+var a = [
+	[10,20,30],
+	[20,30,40],
+];
+
+document.write(a[0)[0]);
+document.write(a[1)[2]);
+
+o/t =>  10
+o/t =>  40
+
+
+--------------------------------------------------------
+
+Modify And Delete list value of array in Js : 
+
+
+Modify :
+
+var arr = [10,20,30];
+arr[0] = 100;
+document.write(arr);
+
+o/t =>  100 ,20,30
+
+
+Delete : 
+
+var arr = [10,20,30];
+delete arr[0];
+document.write(arr);
+
+o/t =>  20 ,30
+
+
+------------------------------------------------------------
+
+ Array method in javascript :
+
+ sort()					slice()						find()
+ reverse()				splice()					findIndex()
+ pop()					isArray()					inculdes()
+ push()					indexOf()					some()
+ shift()				lastIndexOf()				forEach()
+ unshift()				entries()					toString()
+ concat()				every()						valueOf()
+ join()					filter()					fill()
+
+
+ ------------------------------------------------------------
+
+ sort() =>  sorting array with assending to descending order .
+ reverse()  => array reverse (last index to first index) .
+ pop() => remove at the end value.
+ push() =>  add the end index value in given array.
+ shift() => shift delete value on first index of array.
+ unshift() => unshift append value on First index of array.
+ concat() => merge two array using this.
+ Ex ->  var arr1 = [10,20];
+ 		var b = arr1.concat(30,40);
+ 		document.write(b);
+ 		o/t ->  10,20,30,40
+
+ Ex ->  var arr1 = [10,20];
+ 		var arr2 = [30,40];
+ 		var c = arr1.concat(arr2);
+ 		document.write(c);
+ 		o/t ->  10,20,30,40
+
+
+Join() : join is use the array value with which oprator (like |,& , space)
+
+Ex :    var arr1 = [10,20];
+ 		var arr2 = [30,40];
+ 		var c = arr1.concat(arr2);
+ 		var d = c.join("&");
+ 		document.write(d);
+
+ 		o/t :  10&20&30&40
+
+slice() :  slice is used array value index to end index user want then use it .
+			
+		var arr1 = [10,20,30,40];
+		b = a.slice(1,3);
+		document.write(b);
+
+		o/t : 20,30
+
+splice() :  value post after which index then use it:
+
+syntax : arr.splice(indexvalue , how many delete no , "added values ")..
+
+ Ex : var a = [10,20,30];
+ 	  a.splice(2,0,90,100)
+ 	  document.write(a);
+
+ 	  o/t =>  10,20,90,100,30
+point : splice using data insert which index and after how many value  you want delete ,after pass value you insert indexing value then use it.
+
+how many no delete using value then (2,2,"hello").   
+then after 2 index value delete in array 2 value and insert hello values in array.
+
+//  var a = [10,20,30,40];
+	a.splice(2,2)
+ 	document.write(a);
+
+ 	// o/t ->  10,20
+
+ 	splice using start with 2 index after remove 2 values in array then use it. 
+
+--------------------------------------------------------------------------
+
+isArray() : It is Check array is or not then use it .
+
+Ex : var a = [10,20,30];
+	 var b = array.isArray(a);
+	 document.write(a);
+
+	 o/t =>  true;
+
+
+indexOf() : You can check this index is an array or not then use it .
+
+syntax :  indexOf('search item' , 'Starting index value you want to search value after this index.');
+
+Ex :  var a = [10,20,30,10];
+	  var b = a.indexOf(10);
+	  var b = a.indexOf(10,1);
+	  document.write(b);
+
+	  // o/t : 0
+	  // o/t : 3
+
+
+lastIndexOf() : searching with the last indexing value if you want to serach it .
+
+Ex :  var a = [10,20,30,10];
+	  var b = a.lastIndexOf(10);
+	  document.write(b);
+
+	  // o/t =>  3
+
+
+By default lastIndexOf("value")  :   its return last index means always (-1) if you want to search but the no is not an array then return -1.
+
+
+includes()  :  includes seraching value is array is not then use includes function in js. (ites return true or false.)
+
+syntax :  includes ('serach item value');
+
+Ex :  var a = [10,20,30,10];
+	  var b = a.includes(10);
+	  document.write(b);
+
+	  // o/t =>  true.
+
+
+
+some() :  Using this you can test condition of using elements any one is satisfied valie of array using some () function  its return true .
+
+Ex :  var a = [10,20,30,10];
+	  var b = a.some(checkage);
+	  document.write(b);
+
+	  function checkage(a){
+	  	return a >=20;
+	  }
+
+
+	  0/t : true .
+
+
+every() :  when check all condition is satisfied then return true otherwise return false.
+
+Ex :  var a = [10,20,30,10];
+	  var b = a.every(checkage);
+	  document.write(b);
+
+	  function checkage(a){
+	  	return a >5;
+	  }
+
+
+	  0/t : true.
+
+
+
+------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+

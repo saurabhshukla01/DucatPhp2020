@@ -1,0 +1,274 @@
+Database : Database is a collection of data where we can store information in oragnised way. and we can retreive the information easier and faster.
+
+Mysql : it is an open source database. which used for store the data in oragnised way.
+
+Data Types :
+		
+		tinyint, int, bigint, float, decimal (numeric values)
+		char, varchar, text, medium text ,long text	(string)
+		date, time, timestamp (date and time)
+		blob, medium blob, long blob (files)
+		
+		
+		
+
+Constraints (Restrictions of table fields)
+
+1 primary key
+		* unique record (no duplicate record)
+		* only 1 can use in a table
+		* can not null
+	
+2 unique key 
+		* unique record (no duplicate record)
+		* More than 1 can use in a table
+		* can null
+		
+3 not null
+
+4 default
+
+
+
+create table employee (eid int(11) primary key, name varchar(255) not null, email varchar(255) unique key, status char(1) default 'd');
+
+
+
+create table employee (eid int(11) primary key auto_increment, name varchar(255) not null, email varchar(255) unique key, status char(1) default 'd');
+
+5 Foreign Key
+
+	create table account(id int(11), salary int(11) not null, foreign key(id) references employee (eid));
+
+
+6 Composite Key
+	
+	create table product(cat varchar(255), subcat varchar(255), primary key(cat,subcat));
+	
+	
+	
+	
+
+
+
+hostname = "localhost";
+username = "root";
+password = "";
+
+
+
+Database connectivity with cmd (command prompt)
+
+*  open cmd 
+
+*  D:	(if xampp in d drive)
+
+
+* cd.. (one step back) 			or 		cd\	(on root)
+
+
+* cd xampp\mysql\bin
+
+* mysql.exe -u root;
+
+
+
+
+
+	DDL (Data Definition Language)		
+Create, Alter, Drop
+
+
+create database dbname; 
+e.g create database 1230pm;
+
+
+show databases (show name of all databases)
+
+
+use dbname;
+eg.  use 1230pm;
+
+
+create table..............................................
+
+
+show tables; (show all tables name);
+
+
+desc tablename;
+desc employee;	(description)
+
+
+
+Alter 
+
+add column
+
+*	alter table employee add address varchar(255) not null;		// insert in last
+
+*	alter table employee add address varchar(255) not null after email; 	// insert after email
+
+
+Change data type of column
+*	alter table employee modify address char(50) not null;
+
+
+rename column name
+*	alter table tablename change oldname newname datatype;
+
+*	alter table employee change name fname varchar(255);
+
+
+rename table 
+* rename table oldname to newname;
+* rename table employee to students;
+
+
+
+
+Drop
+
+drop column
+*	alter table employee drop address;
+
+drop table
+*	drop table employee;
+
+
+drop database
+*	drop database 1230pm;
+
+
+
+
+
+
+
+****************************************************
+
+DML (Data Manipulation Language)
+
+insert, update, delete
+
+
+
+Insert
+
+*	insert into employee values (1,'abc',28000);
+*	insert into employee (eid,fname,salary) values (1,'abc',28000);
+*	insert into employee set eid=1, 'fname'='abc', salary=28000;
+
+*	insert into employee (eid,fname,salary) values (1,'abc',28000),(2,'xyz',45000);
+
+Update
+
+*	update employee set salary=35000 where eid=1;
+
+
+
+Delete
+*	delete from employee;		// all record delete
+*	truncate table employee;		// all record delete
+*	delete from employee where eid=2;	// delete particular record
+
+
+
+
+Select
+
+select * from employee;
+
+select eid, fname from employee;
+
+select * from employee where eid=2;
+
+select * from employee where eid in(4,8,9);
+
+select * from employee where salary>25000;
+
+select * from employee where salary between 25000 and 40000;
+
+select * from employee where eid>5 and salary>25000;
+
+select * from employee where eid>5 or salary>25000;
+
+select * from employee where name like 'a%';		// first letter a in name
+
+select * from employee where name like '_a%';		// second letter a in name
+
+select * from employee where name like '%a%';		// any where a in name
+
+select * from employee where name like '%a';		// last letter a in name
+
+select * from employee order by salary;		// by default ascending order
+
+select * from employee order by salary desc;		// descending order
+
+
+
+Annual Salary
+
+select eid, fname, salary*12 from employee;
+
+
+Alias
+select eid,fname, salary*12 as annual_salary from employee;
+
+
+limit
+Select * from employee limit 3; 	// get starting 3 records  (1 to 3)
+select * from employee limit 3,5;	// get 5 record after starting 3 records (4 to 8)
+
+
+
+
+
+
+Aggregate Function
+
+max()
+min()
+count()
+upper()
+lower()
+sum()
+concat()
+
+select  max(salary) from employee;
+select  min(salary) from employee;
+select count(name) as total_employee from employee;
+select eid, upper(name) from employee;
+select sum(salary) from employee;
+select concat(fname,'',lname) as full_name from employee;
+
+
+
+autoincrement
+	int, primary key,
+
+
+	
+	
+	
+enum
+
+create table users(id int(11) primary key, name varchar(255) not null, gender enum('male','female') not null);	
+
+insert into users (id,name,gender) values (1,'abc','male');
+insert into users (id,name,gender) values (1,'abc',1);
+	
+	
+	
+	
+	
+set
+
+create table employee(id int(11) primary key, name varchar(255) not null, city set('delhi','noida') not null);	
+
+insert into employee (id,name,gender) values (1,'abc','delhi');
+insert into employee (id,name,gender) values (2,'xyz','noida');
+insert into employee (id,name,gender) values (3,'amit','delhi,noida');
+
+
+

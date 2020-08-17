@@ -1,0 +1,28 @@
+<html>	
+	<head>
+		<title>javascript</title>
+		
+		<script>
+			
+			function zoomin()
+			{
+				document.getElementById("tar").height = "200";
+				document.getElementById("tar").width = "200";
+			}
+			
+			
+			function zoomout()
+			{
+				document.getElementById("tar").height = "100";
+				document.getElementById("tar").width = "100";
+			}
+			
+		</script>
+	</head>
+	
+	<body>
+		
+		<img id="tar" src="cat123.jpg" height="100" width="100" onmouseover="zoomin()" onmouseout="zoomout()">
+		
+	</body>
+</html>

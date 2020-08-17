@@ -1,0 +1,26 @@
+File Uploading : it is a process to upload file on server. when we upload file on server, first it goes in temporary folder. By default upto 2Mb file can upload.
+	
+
+<form method="post" enctype="multipart/form-data">
+	Upload : <input type="file" name="att">
+	<input type="submit" name="sub">
+</form>
+
+
+There are five super global array varibales which used for read file information
+
+1 File name  			 :	$_FILES['fieldname']['name'];
+2 Temporary Name of File :  $_FILES['fieldname']['tmp_name'];
+3 Size Of File 			 :	$_FILES['fieldname']['size'];
+4 Type Of File  		 :	$_FILES['fieldname']['type'];
+5 Error In File 		 : 	$_FILES['fieldname']['error'];
+
+
+move_uploaded_file(temporary name, "path/".filename);
+
+e.g. 
+	move_uploaded_file($_FILES['fieldname']['tmp_name'],"foldername/".$_FILES['fieldname']['name']);
+
+
+
+Note : when you will code then make sure that you have create destination folder for file (images) otherwise it will show error

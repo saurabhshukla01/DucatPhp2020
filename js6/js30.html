@@ -1,0 +1,30 @@
+<html>	
+	<head>
+		<title>javascript</title>
+		
+		<script>
+			
+			function abc()
+			{
+				var x = document.getElementsByName('un');
+				var fn = x[0].value;
+				var ln = x[1].value;
+				
+				alert(fn+ln);
+			}
+			
+		</script>
+	</head>
+	
+	<body>
+		
+			
+		First Name <input type="text" name="un" value="">
+		<br>
+		Last Name <input type="text" name="un" value="">
+		<br>
+		<input type="submit" onclick="abc()">
+			
+		
+	</body>
+</html>

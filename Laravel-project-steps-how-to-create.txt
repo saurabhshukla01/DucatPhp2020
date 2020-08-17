@@ -1,0 +1,157 @@
+	How Can Create New Project In Laravel 6.0 (Full project Step by step) User Use all steps and commands : 
+
+#######################################
+
+Uses Link : (important url how can create project in laravel)
+https://auth0.com/blog/build-a-laravel-6-app-with-authentication/
+https://appdividend.com/2019/09/12/laravel-6-crud-example-laravel-6-tutorial-for-beginners/
+https://laravel.com/docs/7.x/installation
+
+#######################################
+
+All Projects Command here (use in project)
+
+Composer Install command :
+
+# composer global require laravel/installer
+Project  Create Command in laravel 6.0 in version of php 7.2 or less than  :
+#   composer create-project laravel/laravel project-name
+				Or
+#  composer create-project --prefer-dist laravel/laravel Project-name
+				Or 
+cmd#    Laravel new Project-name  (If not working this command so use this command in your project only working with 7.3 or more vision in php ).
+
+Go to project directory : 
+# cd project-name
+After start server command :
+#  php artisan serve
+After start server You can open her project in localhost with port :
+Project Url :  http://127.0.0.1:8000
+
+***********************************************************************************
+
+How To add All Project Based Steps : 
+
+   		 	Laravel Project Step How to create Project In Laravel 6.0
+
+
+Uses Link :
+
+https://auth0.com/blog/build-a-laravel-6-app-with-authentication/
+   			 
+   			 
+1) Step 1 : how to install Composer before creating the Laravel project.
+cmd command is user enter xampp htdocs dir :
+
+cmd#   composer global require laravel/installer
+
+2) Step 2 : Create New project (project name) Like : project1
+
+cmd#    Laravel new Project-name  (If not working this command so use this command in your project only working with 7.3 or more vision in php ).
+
+cmd#   composer create-project --prefer-dist laravel/laravel pharmaLaravel
+   	 or
+
+cmd#   composer create-project laravel/laravel project-name
+   	 or
+
+cmd#   composer create-project laravel/laravel="6.*" pharma-laravel
+
+3)   cd pharma-laravel;  or cd Project-name  or  cd pharmaLaravel
+
+cmd#   php artisan serve   (server start in cmd command after start this you can open her project).
+
+show project dir.
+
+################################################################
+
+Project Url :  http://127.0.0.1:8000
+
+**********************************************************************************
+You need to install the frontend dependencies using the following command.
+
+Install npm in laravel project :
+
+#   npm install
+#   npm install -g npm
+
+Step 1: Configure the MySQL Database : 
+
+Create Database and setup in (.env file) in Laravel project  (setup database file in Laravel project)
+
+setup database file : 
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=database_name
+DB_USERNAME=database_username
+DB_PASSWORD=database_password
+
+you can able to generate the tables in the database using the following command.
+
+After migrate table create automatically .
+
+# php artisan migrate
+
+step 2: How to create View page in laravel project.
+
+# first create her assets file in public folder and after create new files in resource/views inside (folder is layout/commom.blade.php) files and create new file in views index.php file then both file # layout/common.blade.php file extends in the index page.
+
+Ex : 
+
+layout/common.blade.php
+
+header
+         <div id="main">
+            @yield('main')
+         </div>
+footer
+
+index.blade.php 
+
+
+@extends('userview.layout.common')
+@section('main')
+@section('title', 'Home')
+	<div class="main">
+		body part code
+	</div>
+@endsection
+
+
+create : route/web.php
+
+Route::get('admin/', function () {
+    return view('admin/index');
+});
+
+note : set page where is created insert her location.
+
+now load your view page in same url please visit it easy
+
+url is : http://127.0.0.1:8000/admin
+
+
+*****************************************************************
+Now How to Created Controller Steps :
+
+
+*****************************************************************
+
+Now How to created Your models steps : 
+
+Step 3: Create the model and migration files :
+
+Type the following command to create a model and migration files.
+
+#  php artisan make:model Show -m
+
+
+ 
+
+
+	
+
+
+

@@ -1,0 +1,55 @@
+Validation
+
+Regular Expression (Regex)
+
+start  /^
+End $/
+Pattern [] 
+Range {}		{3,6} {min 3, max 6}
+				{6}		{min 6 and max 6}
+				{1, }	{min 1, maximum no limit}
+				
+
+
+Compulsory +		{1,}
+or |			{0,}
+
+
+
+
+Name 
+	/^[a-zA-Z]{1,}$/
+	
+	or 
+	
+	/^[a-zA-Z]+$/
+	
+	
+	
+	
+Mobile 
+		
+	/^[6-9]{1}[0-9]{9}$/
+	
+	or
+	
+	/^[6-9][0-9]{9}$/
+	
+	
+	
+	
+Email
+
+	/^[a-zA-Z0-9_]+@[a-zA-Z]+\.[a-zA-Z]{2,3}$/
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

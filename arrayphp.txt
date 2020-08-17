@@ -1,0 +1,111 @@
+Array : Array is a collection of element, which used for store multiple value in single location
+
+type of array
+	1 index array (numbered array)
+	2 associative array
+	3 multidimensional array
+	
+	
+1 Index array
+	In this array index(keys) of array always in numeric value and it start from 0
+	
+	syntax
+	
+		array name = array(value,value,value,value);
+		
+					or
+					
+		array name = [value,value,value,value];
+		
+		
+		
+	e.g.
+
+		$arr = array(45,"red",82.6);
+				
+				or
+				
+		$arr = [45,"red",82.6];
+		
+			or
+		
+		$arr[0] = 45;
+		$arr[1] = "red";
+		$arr[2] = 82.6;
+			
+		
+		
+		echo $arr[0];
+
+size of array
+		sizeof(arrayname)
+		count(arrayname)
+		
+		echo sizeof($arr);
+		
+		
+print_r(arrayname);  print array index and values
+		
+		
+		
+2 Associative Array
+	In this array index(keys) of array can alpha or numeric or alphanumeric
+	
+	syntax
+		
+		arrayname = array('index'=>'value','index'=>'value')
+		
+				or 
+				
+		arrayname = ['index'=>'value','index'=>'value'];
+		
+	
+	e.g.
+	
+		$arr = array('a'=>'red','8'=>'95.6','c3'=>'99');
+		
+				or
+		
+		$arr = ['a'=>'red','8'=>'95.6','c3'=>'99'];
+		
+				or
+				
+		$arr['a'] = 'red';
+		$arr[8] = 95.6;
+		$arr['c3'] = 99;
+		
+		
+		
+		
+3 Multidimensional array 
+		Array within array is called multidimensional array
+		
+		
+		
+		$arr = array(array(4,5,6),array(7,8,9));
+		
+					or
+					
+		$arr = [[4,5,6],[7,8,9]];
+		
+		
+		echo $arr[0][1];
+		
+		
+		
+		$arr = ['India'=>['capital'=>'Delhi','currency'=>'Ruppee'],'USA'=>['capital'=>'Washington','currency'=>'Dollar'],'Pakistan'=>['capital'=>'Islamabad','currency'=>'Ruppee']];
+				
+		
+		or 
+		
+		$arr['India']['capital'] = "Delhi";
+
+
+
+
+
+
+
+
+
+		

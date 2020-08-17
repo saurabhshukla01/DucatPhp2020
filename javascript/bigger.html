@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>js</title>
+		
+		<script>
+			var txtsize=0;
+			var maxsize=100;
+			
+			setInterval(size,100);
+			function size()
+			{
+				if(txtsize<=maxsize)
+				{
+					document.getElementById('msg').style.fontSize=txtsize;
+					txtsize++;
+				}
+			}		
+		</script>
+	</head>
+	
+	<body onload="size()">
+		<div id="msg">Hello</div>
+	</body>
+</html>

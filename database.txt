@@ -1,0 +1,102 @@
+Database Connectivity
+
+1 MYSQL
+	* mysqli prodedural connectivity
+	* mysqli object based connectivity
+
+2 PDO (PHP DATA OBJECT)
+	It can connect with more than 10 databases
+	
+---------------------------------------------------------------------------------
+	
+hostname = "localhost"	
+username = "root"
+password = ""
+	
+
+mysqli procdural connectivity
+
+
+1 Database Connect
+
+	syntax
+	
+	connection name = mysqli_connect("hostname","username","password","dbname") or die(mysqli_connect_error());
+	
+	e.g.
+	
+	$link = mysqli_connect("localhost","root","","2pm") or die(mysqli_connect_error());
+
+	
+
+	
+2. Execute Query
+
+	syntax
+	
+	mysqli_query(connection name, query);
+	
+	mysqli_query(connection name, query) or die(mysqli_error(connection name));
+	
+	e.g.
+	
+	$result = mysqli_query($link,"select * from employee");
+	
+	e.g.
+	
+	$result = mysqli_query($link,"select * from employee") or die(mysqli_error($link));
+	
+
+	
+	
+3 Count Number of Rows
+
+	mysqli_num_rows();
+	
+	
+	e.g
+	
+	$result = mysqli_query($link,"select * from employee");
+
+	$record = mysqli_num_rows($result);
+	
+	if($record > 0)
+	{
+		echo "Record Found";
+	}
+	else
+	{
+		echo "No Record Found";
+	}
+
+	
+	
+4 Fetch Records
+
+	$arr = mysqli_fetch_assoc($result)			$arr['index']
+	$arr = mysqli_fetch_array($result)			$arr['index'] or $arr[0]
+	$arr = mysqli_fetch_row($result)			$arr[0]
+	$arr = mysqli_fetch_object($result)			$arr->index
+	
+	
+5 Close Connection
+	
+	syntax 
+		mysqli_close(connection name)
+		
+	e.g.
+		mysqli_close($link);
+
+		
+		
+		
+		
+		
+
+----------------------------------------------------------------------------------
+
+
+
+
+
+

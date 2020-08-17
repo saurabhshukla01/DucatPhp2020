@@ -1,0 +1,21 @@
+<html>
+<head>
+<script type="text/javascript">
+img2=new Image();
+img2.src="penguins.jpg";
+function changeImage()
+{
+document.getElementById('myImage').src=img2.src;
+}
+</script>
+</head>
+
+<body>
+
+<p>When you mouse over the image, a new image will appear.</p>
+<img id="myImage" onmouseover="changeImage()" border="0" width="160" height="120" src="tulips.jpg">
+<p>The new image appears instantly, because your browser has already loaded the image.</p>
+
+</body>
+</html>
+

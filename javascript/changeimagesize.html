@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript">
+function moveover()
+{
+document.getElementById('image').width="200";
+document.getElementById('image').height="360";
+}
+function moveback()
+{
+document.getElementById('image').width="100";
+document.getElementById('image').height="180";
+}
+</script>
+</head>
+
+<body>
+
+<b>Mouse over the image:</b><br />
+<img id="image" src="lighthouse.jpg"
+onmouseover="moveover()"
+onmouseout="moveback()"
+width="100" height="180" />
+
+</body>
+</html>
+

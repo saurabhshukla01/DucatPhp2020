@@ -1,0 +1,24 @@
+											Notes : 
+
+
+PHP  :   One of the world’s most popular programming languages for Web development, the PHP Hypertext Preprocessor. It is a best programming for create dynamic web site . it is a scripting langauage , it works with line by line exucation . it is more fast programming language as other langauage like c,c++ . created by a developer named Rasmus Lerdorf.
+
+If you can knowledge of server than you find the code of application , because it is open source language .
+
+
+Advantage of PHP :
+
+Performance
+Portability(Platform Independent)
+Ease Of Use
+Open Source
+Third-Party Application Support
+Community Support
+
+
+
+
+
+
+
+

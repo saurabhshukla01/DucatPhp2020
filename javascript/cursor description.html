@@ -1,0 +1,42 @@
+<html>
+<head>
+<style>
+body
+{
+background:#000000;
+color:#00FF00;
+font-weight:bold;
+}
+a{color:#CCCCCC;}
+</style>
+
+<script type="text/javascript">
+function cursor(text)
+{
+trail.innerHTML=text;
+trail.style.visibility="visible";
+trail.style.position="absolute";
+trail.style.left=event.clientX+10;
+trail.style.top=event.clientY;
+}
+
+function hidecursor()
+{
+trail.style.visibility="hidden";
+}
+</script>
+
+</head>
+<body>
+
+<h1>Mouse over these links</h1>
+
+<a href="/default.asp" onmousemove="cursor('Visit W3Schools.com')" onmouseout="hidecursor()">W3Schools.com</a><br />
+<a href="http://www.altavista.com" onmousemove="cursor('Go to AltaVista')" onmouseout="hidecursor()">AltaVista</a><br />
+<a href="http://www.yahoo.com" onmousemove="cursor('Search with Yahoo!')" onmouseout="hidecursor()">Yahoo!</a><br />
+
+<span id="trail" style="visibility:hidden">Hello</span>
+
+</body>
+</html>
+
